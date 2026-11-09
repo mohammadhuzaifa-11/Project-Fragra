@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dior Sauvage | Fragra</title>
+
+    <link rel="stylesheet" href="view-product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="product-navbar">
+        <h2>
+            <img src="logo.png" alt="">
+        </h2>
+        <a href="Fragra.html">Home</a>
+        <a href="dior.html">Back to Collection</a>
+        <a href="cart.html" class="cart-link">
+    <i class="fa-solid fa-cart-shopping"></i>
+    Cart
+    </a>
+    </nav>
+        <div id="product-panel">
+            <h3 class="offer-text">Get Minimum 30% Off On Your First Order</h3>
+        </div>
+    <p id="lower-panel">Get Genuin Decants Only On Fragra</p>
+    <!-- Product Details -->
+    <div class="product-container">
+
+        <!-- Product Image -->
+        <div class="product-image">
+            <img src="fb2.png" alt="Dior Sauvage Perfume">
+        </div>
+
+        <!-- Product Information -->
+        <div class="product-details">
+
+            <h3>DIOR</h3>
+
+            <h1>Sauvage Eau De Parfum</h1>
+
+            <div class="rating">
+                ★ 4.5 <span>| 120 Reviews</span>
+            </div>
+
+            <p class="description">
+                Dior Sauvage is a bold and refreshing fragrance
+                inspired by wide-open spaces. It combines fresh
+                bergamot with warm and spicy notes for an elegant
+                and long-lasting scent.
+            </p>
+
+            <div class="product-features">
+                <p><b>Brand:</b> Dior</p>
+                <p><b>Fragrance:</b> Fresh & Spicy</p>
+                <p><b>Type:</b> Eau De Parfum</p>
+                <p><b>Size:</b> 100 ml</p>
+                <p><b>Suitable for:</b> Men</p>
+            </div>
+
+            <!-- Price -->
+            <div class="product-price">
+                <span class="discount">30% OFF</span>
+                <del>₹1,000</del>
+                <h2>₹699</h2>
+            </div>
+
+            <!-- Quantity -->
+            <div class="quantity">
+                <label>Quantity:</label>
+                <button onclick="changeQty(-1)">−</button>
+                <span id="qty">1</span>
+                <button onclick="changeQty(1)">+</button>
+            </div>
+
+            <!-- Buttons -->
+            <div class="product-buttons">
+
+                <button class="cart-btn" onclick="addToCart()">
+                    Add to Cart
+                </button>
+
+                <button class="buy-btn" onclick="buyNow()">
+                    Buy Now
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div id="cartPopup" class="cart-popup">
+    <span>✓</span>
+    Product added to cart successfully!
+    </div>
+<script src="site.js"></script>
+<script src="product.js"></script>
+
+</body>
+</html>

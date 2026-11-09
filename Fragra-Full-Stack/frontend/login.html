@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fragra | Account</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="auth-container">
+      <h1><img src="logo.png" alt="Fragra logo" /></h1>
+      <p class="subtitle">THE ART OF FRAGRANCE</p>
+
+      <h2 id="formTitle">Welcome Back</h2>
+      <p id="formSubtitle">Sign in to continue</p>
+
+      <form id="authForm">
+        <div id="nameField" hidden>
+          <label>Full Name</label>
+          <input type="text" id="name" placeholder="Your full name" />
+        </div>
+
+        <label>Email Address</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+
+        <label>Password</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+          required
+        />
+
+        <button type="submit" id="submitBtn">SIGN IN</button>
+      </form>
+
+      <p id="message" role="status"></p>
+
+      <p class="switch-text">
+        <span id="switchPrompt">New to Fragra?</span>
+        <a href="#" id="toggleAuth">Create an account</a>
+      </p>
+
+      <a class="guest-link" href="Fragra.html"> Continue browsing as guest </a>
+    </div>
+
+    <script src="site.js"></script>
+    <script src="auth.js"></script>
+  </body>
+</html>

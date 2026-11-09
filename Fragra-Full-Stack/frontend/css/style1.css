@@ -1,0 +1,185 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ================= HEADER ================= */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: transparent;
+    transition: 0.3s ease;
+}
+
+header .logo img {
+    width: 120px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+header ul li a:hover {
+    color: #000000;
+}
+
+/* ================= HERO SECTION ================= */
+main {
+    height: 100vh;
+    background: linear-gradient(rgba(243, 104, 104, 0.6), rgba(0,0,0,0.6)),
+                url("/img/f1.jpg") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+main img {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+main input {
+    width: 500px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+/* ================= SECTIONS ================= */
+section {
+    padding: 70px 80px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* ================= CATEGORIES ================= */
+.category-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.category-card {
+    background: #e64444;
+    padding: 25px 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.category-card:hover {
+    background-color: #ffffff;
+    color: rgb(220, 60, 60);
+    transform: scale(1.1);
+}
+
+/* ================= RESTAURANTS ================= */
+.restaurant-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.restaurant-card {
+    background: #f03e3e;
+    padding: 30px;
+    width: 220px;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* ================= NEWSLETTER ================= */
+.newsletter {
+    background-color: #cb3845;
+    color: white;
+}
+
+.newsletter input {
+    padding: 12px 20px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    outline: none;
+}
+
+.newsletter button {
+    padding: 12px 20px;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsletter button:hover {
+    background: white;
+    color: #d03a46;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #cf3939;
+    color: rgb(255, 255, 255);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px 30px;
+    }
+
+    main input {
+        width: 90%;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+
+}

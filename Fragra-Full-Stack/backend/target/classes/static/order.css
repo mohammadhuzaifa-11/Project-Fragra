@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f1111;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Background Logo */
+
+.bg-logo {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    opacity: 0.15;
+    pointer-events: none;
+}
+
+.bg-logo img {
+    width: 600px;
+    height: auto;
+}
+
+
+
+.confirmation-container {
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    padding: 45px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgb(180, 54, 254);
+    position: relative;
+    z-index: 1;
+}
+
+/* Success Icon */
+
+.success-icon {
+    width: 80px;
+    height: 80px;
+    background: rgb(224, 204, 236);
+    color: rgb(180, 54, 254);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    margin: 0 auto 25px;
+}
+
+/* Heading */
+
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.message {
+    color: #666;
+    line-height: 1.7;
+}
+
+/* Order Details */
+
+.order-details {
+    background: #f8f7f3;
+    text-align: left;
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 10px;
+}
+
+.order-details h2 {
+    font-family: 'Cormorant Garamond', serif;
+    margin-bottom: 20px;
+    font-size: 27px;
+}
+
+.order-details p {
+    margin: 15px 0;
+    color: #444;
+}
+
+.status {
+    color: rgb(180, 54, 254);
+    font-weight: bold;
+}
+
+/* Delivery Message */
+
+.delivery-message {
+    color: #777;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* Button */
+
+.shop-btn {
+    display: inline-block;
+    background: rgb(180, 54, 254);
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.shop-btn:hover {
+    background: #b08d57;
+}
+
+/* Mobile */
+
+@media(max-width: 600px) {
+
+    .confirmation-container {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+}

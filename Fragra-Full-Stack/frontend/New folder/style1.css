@@ -1,0 +1,268 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: Arial, Helvetica, sans-serif;
+
+    
+}
+
+/* NAVBAR */
+.navbar {
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    padding:  0 30px;
+    justify-content: space-evenly;
+}
+
+/* LEFT SECTION */
+.nav-left {
+    display: flex;              /* THIS makes them side-by-side */
+    align-items: center;
+    gap: 20px;                  /* space between logo and delivery */
+}
+
+/* LOGO */
+.nav_logo {
+    height: 40px;
+    width: 120px;
+    margin-right: 40px;
+    
+}
+
+.logo {
+    background-image: url("logof.png");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* DELIVERY */
+.nav-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.border{
+   
+    border: 2px solid transparent;
+    cursor: pointer;
+    /* transition: 0.2s ease-in-out; */
+}
+.border:hover{
+    border: 2px solid white;
+
+    border-radius: 4px;
+}
+
+.add1 {
+    font-size: 12px;
+    color: #cccccc;
+}
+
+.add-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.add2 {
+    font-size: 14px;
+}
+.nav-search
+{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: orange;
+    width: 600px;
+    height: 40px;
+    border-radius: 4px;
+}
+.nav-search:hover{
+    border: 2px solid orange ;
+}
+.search-select{
+    background-color:#f3f3f3 ;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+}
+.search{
+    width: 100%;
+    font-size: 1rem;
+    border: 2px solid transparent;
+}
+.search:hover{
+    border:3px solid red;
+}
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    font-size: 1.2 rem;
+    background-color: #febd68;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    color: #0f1111;
+}
+
+
+
+
+.nav-singin span,
+.nav-return span
+{ 
+    display: flex;
+    font-size: 12px;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.nav2{
+    
+    font-size: 0.90rem;
+    font-weight: 700;
+}
+
+.nav-singin p,
+.nav-return p
+{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.nav-cart i{
+    font-size: 25px;
+    margin-left: 20px;
+    
+
+
+}
+.panel{
+    height: 35px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.panel-ops p{
+    display: inline;
+    margin: 20px; ;
+    
+}
+.panel-ops {
+    width: 70%;
+    font-size: 0.85rem;
+}
+.panel-deals{
+    font-size: 0.85rem;
+    font-weight:700 ;
+}
+.main{
+    background-image: url(b1.png);
+    height: 300px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+.main-mes{
+    background-color: white;
+    color: black;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+    width: 90%;
+    margin-bottom: 25px;
+}
+.main-mes a{
+    color: #007185;
+
+}
+
+/* SHOP SECTION */
+.shop-section {
+  display: flex;
+  flex-wrap: wrap;              /* allows wrapping if needed */
+  justify-content: space-evenly; /* evenly distribute boxes */
+  background-color: #222f3d;
+  padding: 20px 0;
+}
+
+/* BOXES */
+.box {
+  /* flex: 1 1 22%;                flexible width, about 4 per row */
+  max-width: 200px;               /* ensures 4 fit in one row */
+  min-width: 200px;             /* prevents shrinking too small */
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: white;
+  padding: 15px;
+  margin: 10px;
+  display: flex;
+  flex-direction:column;       /* stack content inside */
+  justify-content:space-evenly;
+}
+
+/* BOX CONTENT */
+.box-content {
+  margin: 0 1rem;
+}
+
+.box-content h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.box-content p {
+  color: #007185;
+  font-size: 0.9rem;
+}
+
+/* BOX IMAGE */
+.box-img {
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 1rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .box {
+    flex: 1 1 45%;   /* 2 boxes per row on tablets */
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .box {
+    flex: 1 1 90%;   /* 1 box per row on mobile */
+    max-width: 90%;
+  }
+}

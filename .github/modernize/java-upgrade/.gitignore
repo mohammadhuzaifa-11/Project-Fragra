@@ -1,0 +1,22 @@
+# Maven
+target/
+**/target/
+
+# Database
+*.mv.db
+*.trace.db
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+
+# Dependencies
+node_modules/
+
+# Logs
+*.log

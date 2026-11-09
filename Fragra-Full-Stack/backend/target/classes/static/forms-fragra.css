@@ -1,0 +1,177 @@
+/* Only for new pages. Existing Fragra homepage and its CSS are unchanged. */
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    background: #0f1111;
+    color: #f6f3f9;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh
+}
+
+a {
+    color: #cb8eff
+}
+
+a:hover {
+    color: white
+}
+
+.fragra-header {
+    background: #0f1111;
+    border-bottom: 3px solid rgb(180, 54, 254);
+    padding: 8px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px
+}
+
+.fragra-header img {
+    width: 155px;
+    height: 66px;
+    object-fit: contain
+}
+
+.fragra-header nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px
+}
+
+.fragra-header nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold
+}
+
+.fragra-layout {
+    max-width: 1100px;
+    padding: 35px 20px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(270px, 1fr);
+    gap: 24px;
+    align-items: start
+}
+
+.fragra-single {
+    max-width: 820px;
+    padding: 40px 20px;
+    margin: auto
+}
+
+.fragra-card {
+    background: #fff;
+    color: #1c1620;
+    border-radius: 13px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 16px rgba(180, 54, 254, .2)
+}
+
+.fragra-card h1 {
+    margin-top: 0;
+    font-size: 32px
+}
+
+.fragra-card p {
+    line-height: 1.5
+}
+
+.fragra-card label {
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    margin: 18px 0
+}
+
+.fragra-card input,
+.fragra-card textarea {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin-top: 8px;
+    border: 1px solid #a4a0a6;
+    border-radius: 6px;
+    font: inherit
+}
+
+.fragra-card input:focus,
+.fragra-card textarea:focus {
+    outline: 2px solid rgb(180, 54, 254)
+}
+
+.fragra-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px
+}
+
+.fragra-payment {
+    background: #f2eafa;
+    padding: 17px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin: 20px 0
+}
+
+.fragra-button {
+    background: rgb(180, 54, 254);
+    color: #fff;
+    border: 0;
+    padding: 13px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px
+}
+
+.fragra-button:hover {
+    background: #8d2ac2
+}
+
+.fragra-button:disabled {
+    opacity: .5;
+    cursor: not-allowed
+}
+
+.fragra-muted {
+    font-size: 13px;
+    color: #666
+}
+
+.fragra-card hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 22px 0
+}
+
+#checkoutItems p {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px
+}
+
+#ordersList .fragra-card {
+    margin-top: 20px
+}
+
+@media(max-width:740px) {
+    .fragra-layout {
+        grid-template-columns: 1fr
+    }
+
+    .fragra-header {
+        padding: 8px 20px
+    }
+
+    .fragra-header img {
+        width: 120px
+    }
+
+    .fragra-two {
+        grid-template-columns: 1fr
+    }
+}

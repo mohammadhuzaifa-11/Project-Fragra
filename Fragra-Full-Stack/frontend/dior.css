@@ -1,0 +1,93 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-color: #0f1111;
+    color: white;
+    font-family: Arial, sans-serif;
+    
+}
+#ad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav_logo {
+    height: 80px;
+    width: 200px;
+}
+.logo {
+    background-image: url("logo.png");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    /* transform: translateX(-35px); */
+}
+
+
+h1 {
+    text-align: center;
+    display: flex;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 1.5px;
+    background-color: rgb(180, 54, 254);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+body > p {
+    text-align: center;
+    color: #ccc;
+    margin-bottom: 35px;
+}
+
+.shop-section {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box {
+    background-color: white;
+    color: #0f1111;
+    width: 260px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: 80px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.box-img {
+    height: 220px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 15px 0;
+}
+
+.box h2 {
+    margin-bottom: 10px;
+}
+
+.box a {
+    display: inline-block;
+    margin-top: 12px;
+    color: white;
+    background-color: rgb(180, 54, 254);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.box a:hover {
+    background-color: #555;
+}

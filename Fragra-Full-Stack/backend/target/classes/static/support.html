@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Customer Service | Fragra</title>
+    <link rel="stylesheet" href="forms-fragra.css" />
+    <script defer src="site.js"></script>
+    <script defer src="support.js"></script>
+  </head>
+  <body>
+    <header class="fragra-header">
+      <a href="Fragra.html"><img src="logo.png" alt="Fragra" /></a>
+      <nav><a href="catalog.html">Shop</a><a href="orders.html">Orders</a></nav>
+    </header>
+    <main class="fragra-single">
+      <section class="fragra-card">
+        <h1>Contact Fragra</h1>
+        <p>
+          Questions about perfume decants, an order, gift cards, or selling?
+          Send an enquiry below.
+        </p>
+        <form id="supportForm">
+          <label>Your name<input required maxlength="100" name="name" /></label
+          ><label
+            >Email<input
+              required
+              type="email"
+              maxlength="254"
+              name="email" /></label
+          ><label
+            >Message<textarea
+              id="supportMessageText"
+              name="message"
+              required
+              minlength="10"
+              maxlength="2000"
+              rows="6"
+            ></textarea>
+          </label>
+          <p id="supportStatus" role="status"></p>
+          <button class="fragra-button">Send Enquiry</button>
+        </form>
+        <p class="fragra-muted">
+          Demo note: enquiries are stored in the backend database; outgoing
+          email is not configured.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

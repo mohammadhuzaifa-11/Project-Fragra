@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Order Confirmed | Fragra</title>
+
+    <link rel="stylesheet" href="order.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="confirmation-container">
+      <div class="bg-logo">
+        <img src="logo.png" alt="Fragra Logo" />
+      </div>
+      <div class="success-icon">✓</div>
+
+      <h1>Checking Your Order...</h1>
+
+      <p class="message">
+        Thank you for shopping with FRAGRA. Your order has been successfully
+        placed.
+      </p>
+
+      <div class="order-details">
+        <h2>Order Details</h2>
+
+        <p><b>Order ID:</b> <span id="orderId">Loading...</span></p>
+
+        <p><b>Product:</b> <span id="productName">Loading...</span></p>
+
+        <p><b>Quantity:</b> <span id="quantity">—</span></p>
+
+        <p><b>Total Amount:</b> ₹<span id="total">—</span></p>
+
+        <p>
+          <b>Order Status:</b>
+          <span class="status">Checking</span>
+        </p>
+      </div>
+
+      <p class="delivery-message">
+        Your perfume is getting ready! Thank you for choosing FRAGRA.
+      </p>
+
+      <a href="Fragra.html" class="shop-btn"> Continue Shopping </a>
+    </div>
+    <script src="site.js"></script>
+    <script src="confirmation.js"></script>
+  </body>
+</html>

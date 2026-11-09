@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>My Account | Fragra</title>
+    <link rel="stylesheet" href="forms-fragra.css" />
+    <script defer src="site.js"></script>
+    <script defer src="account.js"></script>
+  </head>
+  <body>
+    <header class="fragra-header">
+      <a href="Fragra.html"><img src="logo.png" alt="Fragra" /></a>
+      <nav>
+        <a href="catalog.html">Shop</a><a href="cart.html">Cart</a
+        ><a href="orders.html">Orders</a>
+      </nav>
+    </header>
+    <main class="fragra-single">
+      <section class="fragra-card">
+        <h1>My Account</h1>
+        <p><strong>Name:</strong> <span id="accountName">Loading...</span></p>
+        <p><strong>Email:</strong> <span id="accountEmail">Loading...</span></p>
+        <p id="accountMessage" role="status"></p>
+        <p><a href="orders.html">View order history</a></p>
+        <button class="fragra-button" onclick="fragraSignOut()">
+          Sign Out
+        </button>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Secure Checkout | Fragra</title>
+    <link rel="stylesheet" href="forms-fragra.css" />
+    <script defer src="site.js"></script>
+    <script defer src="checkout.js"></script>
+  </head>
+  <body>
+    <header class="fragra-header">
+      <a href="Fragra.html"><img src="logo.png" alt="Fragra" /></a>
+      <nav><a href="cart.html">Cart</a><a href="orders.html">My Orders</a></nav>
+    </header>
+    <main class="fragra-layout">
+      <section class="fragra-card">
+        <h1>Delivery Details</h1>
+        <p>
+          Sign in is required to place an order. Delivery in India · Cash on
+          Delivery only.
+        </p>
+        <form id="checkoutForm">
+          <label
+            >Full name<input
+              required
+              minlength="2"
+              maxlength="100"
+              name="recipient"
+              id="recipient"
+              autocomplete="name"
+          /></label>
+          <label
+            >Mobile number<input
+              required
+              type="tel"
+              name="mobile"
+              maxlength="20"
+              placeholder="10-digit mobile number"
+              autocomplete="tel"
+          /></label>
+          <label
+            >Full delivery address<textarea
+              required
+              maxlength="500"
+              name="address"
+              rows="3"
+              placeholder="House, street, landmark"
+              autocomplete="street-address"
+            ></textarea>
+          </label>
+          <div class="fragra-two">
+            <label
+              >City<input
+                required
+                maxlength="120"
+                name="city"
+                autocomplete="address-level2" /></label
+            ><label
+              >State<input
+                required
+                maxlength="120"
+                name="state"
+                autocomplete="address-level1"
+            /></label>
+          </div>
+          <label
+            >PIN code<input
+              required
+              pattern="[0-9]{6}"
+              maxlength="6"
+              name="pincode"
+              inputmode="numeric"
+              autocomplete="postal-code"
+          /></label>
+          <div class="fragra-payment">
+            <strong>Payment method:</strong> Cash on Delivery (COD)
+            <p>
+              Online payments are not enabled in this internship demo. No card
+              details are collected.
+            </p>
+          </div>
+          <p id="checkoutMessage" role="status"></p>
+          <button type="submit" class="fragra-button">Place Order</button>
+        </form>
+      </section>
+      <aside class="fragra-card">
+        <h2>Order Summary</h2>
+        <div id="checkoutItems">Loading...</div>
+        <hr />
+        <h2>Total: <span id="checkoutTotal">₹0</span></h2>
+        <p>
+          Products and prices are verified by the Java server before the order
+          is created.
+        </p>
+      </aside>
+    </main>
+  </body>
+</html>
